@@ -137,7 +137,6 @@ PRODUCT_PACKAGES += \
     vulkan.adreno \
     libC2D2 \
     libCB \
-    libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
     libOpenCL \
@@ -379,6 +378,7 @@ PRODUCT_PACKAGES += \
     libEventFinder.camera.samsung \
     libFace_Landmark_API.camera.samsung \
     libGPQTEEC_vendor \
+    libGPTEE_vendor \
     libHandGesture.camera.samsung \
     libHprFace_GAE_api.camera.samsung \
     libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
@@ -630,8 +630,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_libEGL_adreno_so \
     vendor_lib_libGLESv2_adreno_so \
     vendor_lib_libq3dtools_adreno_so \
-    vendor_lib64_rfsa_adsp_libsns_device_mode_skel_so \
-    vendor_lib64_rfsa_adsp_libsns_low_lat_stream_skel_so \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
