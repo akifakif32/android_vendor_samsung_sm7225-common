@@ -7483,6 +7483,47 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libwebrtc_audio_preprocessing",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libwebrtc_audio_preprocessing.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwebrtc_audio_preprocessing.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libxml",
     owner: "samsung",
     strip: {

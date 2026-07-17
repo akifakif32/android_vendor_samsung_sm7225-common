@@ -281,6 +281,7 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     libtrustedapploader \
+    libwebrtc_audio_preprocessing \
     libxml \
     libclearkeycasplugin \
     libasphere \
