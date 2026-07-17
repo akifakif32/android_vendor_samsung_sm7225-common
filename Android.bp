@@ -15751,7 +15751,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so",
             ],
             shared_libs: [
-                "android.hardware.light-V1-ndk_platform",
+                "android.hardware.light-V1-ndk",
                 "libbinder_ndk",
                 "libc++",
                 "libc",
