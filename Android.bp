@@ -5,6 +5,7 @@
 soong_namespace {
     imports: [
         "device/samsung/sm7225-common",
+        "hardware/qcom-caf/sm8250",
         "hardware/qcom-caf/wlan",
         "hardware/samsung",
         "vendor/qcom/opensource/commonsys/display",
@@ -8074,48 +8075,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqcompostprocbundle",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/soundfx/libqcompostprocbundle.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libtinyalsa",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libqcompostprocbundle.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libtinyalsa",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqcomvisualizer",
     owner: "samsung",
     strip: {
@@ -9858,7 +9817,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.primary.lito",
+    name: "audio.primary.lito-samsung",
     owner: "samsung",
     strip: {
         none: true,
@@ -9866,7 +9825,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/hw/audio.primary.lito.so",
+                "proprietary/vendor/lib/hw/audio.primary.lito-samsung.so",
             ],
             shared_libs: [
                 "libbase",
@@ -10823,6 +10782,34 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "32",
     relative_install_path: "mediadrm",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcompostprocbundle",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/soundfx/libqcompostprocbundle.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libtinyalsa",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "soundfx",
     prefer: true,
     soc_specific: true,
 }
@@ -13397,6 +13384,30 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librmsclib1",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/librmsclib1.so",
+            ],
+            shared_libs: [
+                "libm",
+                "libdl",
+                "liblog",
+                "libc",
             ],
         },
     },

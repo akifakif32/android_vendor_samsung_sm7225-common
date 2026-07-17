@@ -295,7 +295,6 @@ PRODUCT_PACKAGES += \
     libmyspace \
     libplaybackrecorder \
     libqcbassboost \
-    libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcreverb \
@@ -335,7 +334,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.bluetooth@2.0 \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.thermal@1.0 \
-    audio.primary.lito \
+    audio.primary.lito-samsung \
     lib_SamsungRec_07010 \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
@@ -366,6 +365,7 @@ PRODUCT_PACKAGES += \
     libvideoutils \
     libwvhidl \
     libwvdrmengine \
+    libqcompostprocbundle \
     libvolumelistener \
     spatializer-aidl-V1-cpp \
     vendor.qti.hardware.audiohalext@1.0 \
@@ -459,6 +459,7 @@ PRODUCT_PACKAGES += \
     libremosaiclib \
     libril_sem \
     librilutils \
+    librmsclib1 \
     libsavscmn \
     libscenedetector.uniplugin@1.0 \
     libscveCommon \
@@ -557,7 +558,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libsnpe_dsp_v66_domains_v2_skel_so \
     vendor_lib_rfsa_adsp_libsns_device_mode_skel_so \
     vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
-    vendor.qti.hardware.fm@1.0 \
     fm_helium \
     libfm-hci \
     CACertService \
